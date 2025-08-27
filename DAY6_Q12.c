@@ -3,7 +3,7 @@
 
 int main() {
     int n;
-    // clrscr();
+    clrscr();
     printf("Enter the number:");
     scanf("%d",&n);
 
@@ -20,7 +20,8 @@ int main() {
     else printf("%d is negative",n);
 
     return 0;
-    // getch();
+    getch();
+
 
 
 }

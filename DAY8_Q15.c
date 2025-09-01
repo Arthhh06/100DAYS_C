@@ -4,7 +4,7 @@
 int main() {
     char ch;
    
-    // clrscr();
+    clrscr();
     printf("Enter :");
     scanf("%c",&ch);
 
@@ -17,6 +17,7 @@ int main() {
     else printf("%c is a special character.",ch);
 
     return 0;
-    // getch();
+    getch();
 
 }
+

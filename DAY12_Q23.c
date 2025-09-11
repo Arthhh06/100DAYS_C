@@ -9,37 +9,21 @@ More than 30 days: Membership Cancelled. */
  
 int main(){
     int latedays,fine=0;
-    // clrscr();
+    clrscr();
 
     printf("Enter the number of late days:");
     scanf("%d",&latedays);
 
     if (latedays<=5){
-        for (int i=1;i<=latedays;i++){
-            fine=fine+2;
-        }
+        fine=latedays*2;
     }
     
-    else if (latedays<=10){
-
-        for (int i=1;i<=5;i++){
-            fine=fine+2;
-        }
-        for (int i=5;i<=latedays;i++){
-            fine=fine+4;
-        }
+    else if (latedays<=10 && latedays>5){
+        fine=10+(latedays-5)*4;
     }
 
     else if (latedays<=30 && latedays>10){
-        for (int i=1;i<=5;i++){
-            fine=fine+2;
-        }
-        for (int i=6;i<=10;i++){
-            fine=fine+4;
-        }
-        for (int i=11;i<=latedays;i++){
-            fine=fine+6;
-        }
+        fine=30+(latedays-10)*6;
     } 
 
     if (fine!=0)
@@ -48,7 +32,7 @@ int main(){
         printf("The membership is cancelled.");
     }
 
-    // getch();
+    getch();
     return 0;
 
 }

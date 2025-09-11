@@ -9,7 +9,7 @@ Above at ₹12/unit  */
  
 int main(){
     int units,bill=0;
-    // clrscr();
+    clrscr();
 
     printf("Enter the units of electricity used:");
     scanf("%d",&units);
@@ -33,7 +33,8 @@ int main(){
     printf("The total bill amount for %d is: %d",units,bill);
     
 
-    // getch();
+    getch();
     return 0;
+
 
 }

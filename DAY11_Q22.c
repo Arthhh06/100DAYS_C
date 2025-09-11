@@ -12,11 +12,11 @@ int main(){
     scanf("%d", &sp);
 
     if (sp>cp){
-        balance=(sp-cp)/100;
+        balance=((sp-cp)/100)/cp;
         printf("The profit percentage is %f ",balance);}
 
     else if(cp>sp){
-        balance=(cp-sp)/100;
+        balance=((cp-sp)/100)/cp;
         printf("The loss percentage is %f ",balance);}
     
     else 

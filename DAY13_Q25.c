@@ -1,6 +1,5 @@
 // Write a program to implement a basic calculator using switch-case for +, -, *, /, %.
 
-// INCOMPLETE
 
 #include<stdio.h>
 int main(){
@@ -35,4 +34,5 @@ int main(){
     }
     getch();
     return 0;
+
 }
